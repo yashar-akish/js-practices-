@@ -50,3 +50,7 @@ console.log(thirdArray.includes(3))
 console.log(thirdArray.includes(9))
 console.log(thirdArray.includes(2, 3))  // if number '2' exist starting from third index
 console.log(thirdArray.includes(2, 1))
+
+/**
+ * END
+ */
