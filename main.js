@@ -22,10 +22,11 @@ console.log(myArray.map(num => 'number : ' + num + 'th'))
 
     if (true) {
         setTimeout(() => {
-            resolve(' I have succeeded')
+            resolve(`
+            I have succeeded`)
         }, 2000)
     } else {
-        reject(' I have failed')
+        reject('\n I have failed')
     }
 })
 
@@ -102,8 +103,19 @@ const sum = arr.reduce((accumulator, currentElement) => accumulator + currentEle
 console.log(sum)
 
 /**
- *
+ *      curring
  */
+const multiply = (a, b) => a * b;
+let n = multiply(4, 5);
+console.log(n);
+
+const curriedMultiply = (a) => (b) => a * b;
+n = curriedMultiply(5)(6);
+console.log(n);
+
+const curriedMultiplyBy5 = curriedMultiply(5);
+n = curriedMultiplyBy5(8);
+console.log(n);
 /**
  * END
  */
