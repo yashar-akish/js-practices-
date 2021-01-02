@@ -18,7 +18,8 @@ console.log(myArray.map(num => 'number : ' + num + 'th'))
 
 /**
  *    promises()
- */const myPromise = new Promise((resolve, reject) => {
+ */
+const myPromise = new Promise((resolve, reject) => {
 
     if (true) {
         setTimeout(() => {
